@@ -1,0 +1,67 @@
+.header-nav {
+    width: 100%;
+    display: flex;
+    margin-left: 5rem;
+}
+
+/* first flex item of header-nav */
+.header-logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 2.5rem;
+}
+
+.header-logo-container a img {
+    width: 100%;
+    height: auto;
+}
+
+/* second flex item of header-nav */
+.header-tabs {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    flex-grow: 1;
+}
+
+.header-tabs-appearance * {
+    color: var(--medium-gray);
+}
+
+.features-tab a::after,
+.compagny-tab a::after {
+    content: '';
+    background: url("../images/icon-arrow-down.svg") no-repeat;
+    background-position: center;
+    width: 100px;
+    padding-left: 1.5rem;
+    z-index: -1;
+}
+
+.features-tab a::after:target,
+.compagny-tab a::after:target {
+    content: '';
+    background: url("../images/icon-arrow-up.svg") no-repeat;
+    background-position: center;
+    width: 100px;
+    padding-left: 1.5rem;
+    z-index: -1;
+}
+
+
+/* third and last flex item of header-nav */
+.header-buttons {
+    margin-right: 1rem;
+    display: flex;
+    gap: 2.5rem;
+}
+
+.login-btn {
+    border: none;
+}
+
+.register-btn {
+    border: 2px solid var(--almost-black);
+    border-radius: 20px;
+    padding: 1rem 2rem;
+}
