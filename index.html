@@ -26,21 +26,45 @@
 <body>
 
   <header class="header-layout header-appearance">
+
+
     <nav class="header-nav" aria-label="navigation-header">
+
+
       <div class="header-logo-container">
-        <a href="#"><img alt="Marque du site: Snap" src="./images/logo.svg"></a>
+        <img alt="Marque du site: Snap" src="./images/logo.svg">
       </div>
+
+
       <ul class="header-tabs header-tabs-appearance">
-        <li class="features-tab"><a href="#">Features</a></li>
-        <li class="compagny-tab"><a href="#">Compagny</a></li>
+
+        <li class="features-tab" id="feature-tab">
+          <a href="#feature">Features</a>
+          <ul class="features-sub-list" id="features-sub-list">
+            <li><img alt="todo-list" src="./images/icon-todo.svg"><a href="#">Todo List</a></li>
+            <li><img alt="calendar" src="./images/icon-calendar.svg"><a href="#">Calendar</a></li>
+            <li><img alt="reminders" src="./images/icon-reminders.svg"><a href="#">Reminders</a></li>
+            <li><img alt="planning" src="./images/icon-planning.svg"><a href="#">Planning</a></li>
+          </ul>
+        </li>
+
+        <li class="compagny-tab" id="compagny-tab">
+          <a href="#">Compagny</a>
+          <ul class="compagny-sub-list" id="compagny-sub-list">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </li>
+
         <li class="careers-tab"><a href="#">Careers</a></li>
         <li class="about-tab"><a href="#">About</a></li>
       </ul>
 
-      <div class="header-buttons">
-        <button type="button" class="login-btn">Login</button>
-        <button type="button" class="register-btn">Register</button>
-      </div>
+      <ul class="header-buttons">
+        <li><button type="button" class="login-btn">Login</button></li>
+        <li><button type="button" class="register-btn">Register</button></li>
+      </ul>
     </nav>
   </header>
 
@@ -61,7 +85,7 @@
       </p>
     </div>
   </footer>
-
+  <script src="./dropdown.js"></script>
 </body>
 
 </html>
