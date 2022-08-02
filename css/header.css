@@ -132,10 +132,7 @@
     border: none;
 }
 
-.register-btn {
-    border: 2px solid var(--almost-black);
-    border-radius: 10px;
-    padding: 1rem 2rem;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+.register-btn-style {
+    border: 2px solid var(--medium-gray);
+    color: var(--medium-gray);
 }
