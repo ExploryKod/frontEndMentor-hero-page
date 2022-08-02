@@ -30,6 +30,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--almost-white);
+    overflow-x: hidden;
 }
 
 h1,
@@ -60,7 +61,7 @@ button {
 
 a {
     text-decoration: none;
-    color: var(--almost-black);
+    color: var(--medium-gray);
     cursor: pointer;
 }
 
@@ -76,6 +77,10 @@ button {
 }
 
 .layout-btn {
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 1rem 2rem;
 }
+
+
+/* Tool used for the logo to generate the wanted color of svg with css filter: 
+https: //angel-rs.github.io/css-color-filter-generator/ */

@@ -10,11 +10,8 @@ const compagnyTabLink = document.querySelector(".compagny-tab a");
 const featureTabSubList = document.getElementById("features-sub-list");
 const compagnyTabSubList = document.getElementById("compagny-sub-list");
 
-// header tabs to change their appearance
-const TabLinks = document.querySelectorAll(".header-tabs-appearance li a");
-
-// header end tabs : login and register parent node
-const buttonLinks = document.querySelectorAll(".header-buttons");
+// header tabs to change only the appearance of all tabs with the class dropdown-tabs
+const TabLinks = document.querySelectorAll(".dropdown-tabs");
 
         /* --------------------------
                 FUNCTION FOR EVENTS
@@ -27,34 +24,22 @@ const changeTabArrowIcon = (e) => {
    
     if(result) {
         menuTargeted.style.visibility = "visible";
+        menuTargeted.classList.add("dropdown-animation");
     } else {
         menuTargeted.style.visibility = "hidden";
+        menuTargeted.classList.remove("dropdown-animation");
     }    
 }
 
 const changeTabColor = (e) => {
-
+    console.log(e.target);
     const newColor = e.target.classList.toggle("active");
-
-
+    console.log(newColor);
     if(newColor) {
         e.target.style.color = "#141414";
     } else {
         e.target.style.color = "#696969";
     }    
-}
-
-const changeRegisterBorderColor = (e) => {
-        
-    const newBorderColor = e.target.classList.toggle("border-color");
-    // the button element with text "register":
-    const register = buttonLinks[0].children[1].children[0];
-    
-    if(newBorderColor) {
-           register.style.border = "1px solid #141414"
-    } else {
-           register.style.border = "1px solid #696969"
-    }
 }
 
             /* ---------------------- 
@@ -63,8 +48,6 @@ const changeRegisterBorderColor = (e) => {
 
 featureTabLink.addEventListener("click", changeTabArrowIcon);
 compagnyTabLink.addEventListener("click", changeTabArrowIcon); 
-TabLinks.forEach(tabLink => {tabLink.addEventListener("click", changeTabColor)}); 
-buttonLinks.forEach(buttonLink => {buttonLink.addEventListener("click", changeTabColor)}); 
 
-// the li element with button having his text = "register":
-buttonLinks[0].children[1].addEventListener("click", changeRegisterBorderColor); 
+// Each tab link that have dropdown menu to deploy
+TabLinks.forEach(tabLink => {tabLink.addEventListener("click", changeTabColor)}); 
