@@ -15,7 +15,7 @@
 
 /* first flex item of header-nav */
 .header-logo-container {
-    margin-left: 2.5rem;
+    margin-left: 3.5rem;
     display: flex;
     justify-content: center;
 }
@@ -38,7 +38,10 @@
     flex-grow: 1;
     display: flex;
     margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
     gap: 2.5rem;
+    padding-left: 5.5rem;
 }
 
 .header-tabs-appearance * {
@@ -53,9 +56,10 @@
 .features-tab a::after,
 .compagny-tab a::after {
     content: '';
+
     background: url("../images/icon-arrow-down.svg") no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: 50%;
     margin-left: 1rem;
     padding-left: 2rem;
     z-index: -1;
@@ -68,9 +72,7 @@
     content: '';
     background: url("../images/icon-arrow-up.svg") no-repeat;
     background-position: center;
-    background-size: 100%;
-    background-color: #fff;
-    filter: brightness(0) saturate(100%) invert(38%) sepia(0%) saturate(29%) hue-rotate(178deg) brightness(105%) contrast(94%);
+    background-size: 50%;
 }
 
 .compagny-sub-list,
@@ -148,10 +150,10 @@
 
 /* third and last flex item of header-nav */
 .header-buttons {
-    margin-right: 2.5rem;
+    margin-right: 3.6rem;
     display: flex;
     align-items: center;
-    justify-items: flex-end;
+    justify-items: center;
     flex-grow: 0;
 
 }
@@ -160,6 +162,8 @@
     padding: 1rem 2rem;
     color: var(--medium-gray);
     border: none;
+    margin: 0 4.3rem;
+    padding: 0;
 }
 
 .register-btn-style {
