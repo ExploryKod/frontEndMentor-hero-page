@@ -10,17 +10,6 @@
   <link rel="stylesheet" href="./css/main.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
@@ -32,7 +21,9 @@
 
 
       <div class="header-logo-container">
+
         <img alt="Marque du site: Snap" src="./images/logo.svg">
+
       </div>
 
 
@@ -55,7 +46,7 @@
           <a href="#" class="dropdown-tabs header-tab-font">Company</a>
           <ul class="compagny-sub-list" id="compagny-sub-list">
             <li><a href="#" class="header-tab-font">History</a></li>
-            <li><a href="#" class="header-tab-font">Our Team</a></li>
+            <li><a href="#" class="header-tab-font"><span>Our</span><span>Team</span></a></li>
             <li><a href="#" class="header-tab-font">Blog</a></li>
           </ul>
         </li>
@@ -74,21 +65,17 @@
 
   <main class="main-layout">
 
-    <div class="article-container main-sub-container-size">
+    <article class="hero-left-container">
+      <h1 class="article-title">Make<br /> remote work</h1>
 
-      <article class="hero-article">
-        <h1 class="article-title">Make<br /> remote work</h1>
-
-        <div class="paragraph-container">
-          <p class="article-paragraph">
-            Get your team in sync, no matter your location.<br />
-            Streamline processes,create team rituals, and watch productivity soar.</p>
-        </div>
+      <div class="paragraph-container">
+        <p class="article-paragraph">
+          Get your team in sync, no matter your location.<br />
+          Streamline processes, create team rituals, and watch productivity soar.</p>
+      </div>
 
 
-        <button class="learn-more-btn learn-more-btn-color layout-btn">Learn more</button>
-      </article>
-
+      <button class="learn-more-btn learn-more-btn-color layout-btn">Learn more</button>
 
       <div class="clients-section" role="region" aria-label="our clients">
         <img src="./images/client-databiz.svg" alt="databiz">
@@ -96,11 +83,13 @@
         <img src="./images/client-meet.svg" alt="meet">
         <img src="./images/client-maker.svg" alt="maker">
       </div>
+    </article>
 
-    </div>
-
-    <div class="hero-image-container main-sub-container-size">
-      <img alt="a man with a laptop and colorized forms" src="./images/image-hero-desktop.png">
+    <div class="hero-right-container">
+      <img class="hero__image-desktop" alt="a man with a laptop and colorized forms"
+        src="./images/image-hero-desktop.png">
+      <img class="hero__image-mobile" alt="a man with a laptop and colorized forms"
+        src="./images/image-hero-mobile.png">
     </div>
   </main>
 
