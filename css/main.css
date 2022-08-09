@@ -104,7 +104,6 @@
     padding-top: 3rem;
 
     display: flex;
-
     justify-content: center;
     align-items: center;
 }
@@ -129,6 +128,7 @@
     }
 
     .hero-right-container {
+        grid-area: one;
         padding-top: 0;
         min-width: 550px;
     }
@@ -162,11 +162,15 @@
 
     .article-paragraph {
         text-align: left;
+        font-size: 1.8rem;
     }
 
     .clients-section {
-        align-self: center;
-        justify-content: space-between;
+        grid-area: three;
+        width: 100%;
+
+        align-self: end;
+        justify-content: space-evenly;
     }
 
 
