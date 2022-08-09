@@ -29,6 +29,7 @@
     max-width: 90vw;
     padding-top: 3rem;
     align-self: center;
+    margin: 0 auto;
     position: relative;
 }
 
@@ -79,7 +80,7 @@
 
 .learn-more-btn {
     margin-top: 5rem;
-    padding: 2rem 2.8rem;
+    padding: calc(1rem + 1vh) calc(2rem + 1.5vw);
     font-size: 1.8rem;
 }
 
